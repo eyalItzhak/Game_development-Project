@@ -9,7 +9,7 @@ public class Character : MonoBehaviour
     float rotatinX = 0f;
     float rotatinY = 0f;
     public float sensitivity = 15f;
-
+     
     void Start()
     {
         characterController = GetComponent<CharacterController>();
