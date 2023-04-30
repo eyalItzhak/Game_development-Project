@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class gateTrigger : MonoBehaviour
 {
+    private Animator mAnimator;
+   
     // Start is called before the first frame update
     void Start()
     {
-        
+        mAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,7 +32,7 @@ public class gateTrigger : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
-            Debug.Log("press e");
+            mAnimator.SetTrigger("GtOpen");
         }
     }
 }
