@@ -32,6 +32,7 @@ public class gateTrigger : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
+            Debug.Log("gateOpen");
             mAnimator.SetTrigger("GtOpen");
         }
     }
