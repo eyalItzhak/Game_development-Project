@@ -5,6 +5,7 @@ using UnityEngine;
 public class gateTrigger : MonoBehaviour
 {
     private Animator mAnimator;
+    public AudioSource playSound;
    
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class gateTrigger : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("out");
+        playSound.Play();
     }
 
     private void OnTriggerStay(Collider other)
